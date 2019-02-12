@@ -1,12 +1,17 @@
 package com.ocr.thomas;
 
 public class Product {
-    String name;
-    String description;
-    double price;
+    private String name;
+    private String description;
+    private double price;
 
 
 
+    public Product(String name, String description, double price){
+        this.name = name;
+        this.description = description;
+        this.price = price;
+    }
 
     public void look(){
         System.out.println(String.format(name = " : " + price + "%n" + description));
